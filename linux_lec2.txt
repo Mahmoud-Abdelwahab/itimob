@@ -1,0 +1,44 @@
+1) su -			-> switchs user to the root
+2) dhclient		-> gets ready to connect to a server
+3) ip addr		-> gets the ip
+4) ssh			-> on the mobaxterm to connect								//ssh <username>@<ip>
+5) exit			-> logs out
+6) vi			-> to write in a file										//has an editing mode , escape mode
+	1) i		-> starts the editing at the same cursor place
+	2) a 		-> starts the editing from the next cursor place
+	3) o		-> starts editing from new line
+	4) esc		-> gets from the editing to the escape mode
+	5) yy		-> copies a line											//for multible lines selection enter the number of lines before yy
+	6) p		-> pastes a line
+	7) :<n> 	-> goes to the line number n
+	8) dd		-> deletes a line											//for multible lines deletion enter the number of lines before dd
+	9) x		-> deletes the current character
+	10) G		-> gets to the last line
+	11) yw		-> copies a word											//for multible words copying enter the number of lines before yw
+	12) u		-> undo
+	13) / or ?	-> search
+	14) :w		-> write (save)
+	15) :q		-> quit (without saving)
+	16) :wq		-> save then exit
+	17) :wq!	-> forces the edit
+7) useradd		-> creates a new user										//takes the user name as a mandatory argument , it must be done from the root
+	1) -md		-> creates a home file for the user
+	2) -s		-> specify the shell allowed to the user
+	3) -g		-> sets the primary group for the user
+	4) -c		-> to add a comment
+	5) -G		-> sets the secondary groups for the user					//group1,group2,group3...
+8) passwd		-> changes the password										//if you are in the root you can change the user name for any user
+9) usermod		-> modify the data for a user								//it edits any of the user fields , it takes the same options as useradd
+10) userdel		-> deletes  user
+10) id			-> gets the current user data
+11) groupadd	-> adds a new group											//it takes the group name as a mandatory argument
+12) groupdel	-> deletes a group											//if you try to delete a group which is a primary group for a user it will give an error
+13) chown		-> changes the owner or the group of a file
+	1) -R		-> changes the owner or the group of all the children
+14) chmod		-> changes the permissions of a file						//you must be the owner or the root , can use the below or you can use the decimal numbers
+																			//r => 4 , w => 2 , x => 1
+	1) u		-> an argument to change the permissions of the owner		//use "+" or "-" or "=" as operators
+	2) g		-> an argument to change the permissions of the group		//use "+" or "-" or "=" as operators
+	3) o		-> an argument to change the permissions of the others		//use "+" or "-" or "=" as operators
+	4) a		-> an argument to change the permissions of all the above	//use "+" or "-" or "=" as operators
+	5) -R		-> changes the permissions of all the children

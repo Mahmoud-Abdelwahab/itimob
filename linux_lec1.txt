@@ -1,0 +1,40 @@
+(cmd) --help	-> gives a prief about the command
+(cmd) | (cmd)	-> takes the output of the first as an input in the second
+1) ls			-> list items in a path
+	1) -l		-> more details
+	2) -h		-> human readable
+	3) -t		-> time sort(desc)
+	4) -r		-> reverse sort
+	5) -F		-> file type
+	6) -a		-> show hidden files
+	7) -R		-> shows the whole tree under a path
+	8) -d		-> shows the information for the current directory only
+2) history		-> gives the whole history
+3) clear		-> clears screen
+4) cd			-> change directory
+5) pwd			-> get current path
+6) touch		-> create new file
+7) mkdir		-> create new directory
+	1) -p		-> create parent also
+8) cat			-> read file
+9) rm			-> removes a file
+	1) -r		-> removes a directory
+	2) -f		-> force remove without asking
+10) cp			-> copies files							//it takes the source then the destination separated by space , you can change the name by changing it in the destination
+	1) -r		-> copies directories
+	2) -f		-> copies files without asking
+11) mv			-> moves a file or directory			//it takes the source then the destination separated by space , 
+														//you can rename the file or the directory by changing its name only
+	1) -f		-> forces moving a file without asking
+12) wc			-> counts some option in a file
+	1) -l		-> counts the lines
+	2) -c		-> counts characters
+	3) -w		-> counts words
+13) more		-> shows a file some by some			//if you press enter it will show it line by line , if space page by bage , q to exit
+14) less		-> does the same as more    			//it can search by writing / , i go next with "n" , prev by shift + "n"
+15) head		-> shows the start of the file(10 lines)
+	1) -n		-> gives a specific number	
+16) tail		-> shows the last of the file
+	1) -n		-> gives a specific number	
+17) man	(cmd)	-> dictionary of linux					//gives a full information for the cmd
+	1) -k		-> searchs the man for a specific pattern
